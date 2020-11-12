@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abel", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+:root {
+  --Gris: #454a45;
+  --Negro: #252725;
+  --Amarillo: #ffc000;
+  --Blanco: #ffffff;
+}
+
+.about-me h3 {
+  font-family: "AvantGarde Bk BT", "Franklin Gothic Medium", "Arial Narrow",
+    Arial, sans-serif;
+  color: var(--Negro);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.works {
+  margin: 1em auto;
+}
+
+.about-me p {
+  font-size: 0.4rem;
+  color: var(--Negro);
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+}
+
+.me h4 {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* ===========================
+        Layout
+============================== */
+
+.about-me {
+  width: 95%;
+  margin: 1.5em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+}
+
+.about-me img {
+  margin: 2em auto;
+  width: 100%;
+}
+
+.about-me p {
+  display: block;
+  margin: 0.1em auto;
+  width: 90%;
+}
+
+.works-img .hover {
+  background-color: var(--Negro);
+  width: 100%;
+  justify-self: inherit;
+  height: 100%;
+}
+
+.about-me map:focus {
+  border: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.rectangle2 {
+  width: 80%;
+  height: 0.3rem;
+  margin: 1em auto;
+  background-color: var(--Amarillo);
+}
+
+.me {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 70%;
+  margin: 0.5em auto;
+}
+
+.me-img {
+  width: 100%;
+  padding: 1em;
+  position: relative;
+}
+
+.me img {
+  margin: 0.5em auto;
+  width: 100%;
+}
+
+/* ===========================
+        Decorations
+============================== */
+
+@media (min-width: 650px) {
+  .hidden {
+    display: unset;
+  }
+
+  .direction {
+    height: 250px;
+    flex-direction: row;
+    align-items: space-evenly;
+    justify-content: center;
+  }
+
+  .about-me img {
+    margin: 5em auto;
+    width: 1000px;
+    height: 439px;
+  }
+
+  .about-me h3 {
+    font-family: "AvantGarde Bk BT", "Franklin Gothic Medium", "Arial Narrow",
+      Arial, sans-serif;
+    color: var(--Negro);
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-align: left;
+  }
+
+  .about-me p {
+    font-size: 1.1rem;
+    color: var(--Negro);
+    text-align: justify;
+  }
+  .about-me {
+    width: 95%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+  }
+
+  .about-me p {
+    display: block;
+    margin: 0.1em auto;
+    width: 80%;
+  }
+
+  .rectangle2 {
+    width: 90%;
+    height: 0.4rem;
+    margin: 4em auto;
+    background-color: var(--Amarillo);
+  }
+
+  .text h4 {
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+
+  .me {
+    width: 50%;
+    margin: 0.5em auto;
+  }
+
+  .me-img {
+    padding: 2em;
+  }
+}

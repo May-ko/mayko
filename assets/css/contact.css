@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abel", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+:root {
+  --Gris: #454a45;
+  --Negro: #252725;
+  --Amarillo: #ffc000;
+  --Blanco: #ffffff;
+}
+
+.direction h3 {
+  font-size: 2.5em;
+  color: var(--Amarillo);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.direction p {
+  font-size: 0.9em;
+  color: var(--Negro);
+  text-align: justify;
+}
+
+.form h4 {
+  font-size: 1.1em;
+  color: var(--Amarillo);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ===========================
+        Layout
+============================== */
+
+.direction {
+  width: 95%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+}
+
+.direction-text {
+  width: 95%;
+  padding: 1em;
+}
+
+.direction-map {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+.direction-map iframe {
+  width: 70%;
+}
+
+.form {
+  width: 95%;
+  margin: 2em auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.form-job {
+  width: 70%;
+  margin: 2em auto;
+}
+
+/* ===========================
+        Decorations
+============================== */
+
+@media (min-width: 650px) {
+  .direction {
+    height: 250px;
+    flex-direction: row;
+    align-items: space-evenly;
+    justify-content: center;
+  }
+
+  .direction-map {
+    width: 45%;
+  }
+
+  .direction-text {
+    width: 45%;
+  }
+
+  .form h4 {
+    margin: 0.2em;
+    font-size: 1.5em;
+  }
+}

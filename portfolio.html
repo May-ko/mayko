@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayko</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="icon" href="assets/img/mayko-favicon.png" />
+
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+      img {
+        width: 100%;
+      }
+      .rectangle {
+        height: 1rem;
+        background-color: #454a45;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="brand"><h1>Mayko</h1></div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portafolio</a>
+            </li>
+            <li>
+              <div class="dropdown">
+                <span>Acerca</span>
+                <div class="dropdown-content">
+                  <a href="contatc.html" class="dropdown-item">Contacto</a>
+                  <a href="about.html" class="dropdown-item">Acerca De</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="menu">
+        <button class="btn" id="btn_mg">Editorial</button>
+        <button class="btn" id="btn_ph">Fotografía</button>
+        <button class="btn" id="btn_il">Ilustración</button>
+      </div>
+
+      <div class="container-content hidden" id="il">
+        <div class="drawing">
+          <iframe
+            src="https://www.youtube.com/embed/dRFHmFoc6E8"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="container-content hidden" id="mg">
+        <div class="slider" id="slide">
+          <div class="img"></div>
+          <div class="img"></div>
+          <div class="img"></div>
+          <div class="img"></div>
+          <div class="img"></div>
+          <div class="img"></div>
+          <div class="img"></div>
+        </div>
+        <div class="options">
+          <button id="btn_prev">Anterior</button>
+          <button id="btn_next">Siguiente</button>
+        </div>
+      </div>
+
+      <div class="container-content" id="ph">
+        <div class="gallery">
+          <img src="assets/img/portfolio/photo/a1.jpg" alt="" />
+          <img src="assets/img/portfolio/photo/a2.JPG" alt="" />
+          <img src="assets/img/portfolio/photo/a3.JPG" alt="" />
+          <img src="assets/img/portfolio/photo/b1.jpg" class="large" alt="" />
+          <img src="assets/img/portfolio/photo/b2.jpg" alt="" />
+          <img src="assets/img/portfolio/photo/c1.jpg" class="large" alt="" />
+          <img src="assets/img/portfolio/photo/c2.jpg" alt="" />
+          <img src="assets/img/portfolio/photo/d1.jpg" alt="" />
+          <img src="assets/img/portfolio/photo/d2.jpg" alt="" />
+          <img src="assets/img/portfolio/photo/d3.jpg" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="rectangle"></div>
+      <div class="columns">
+        <div class="banner">
+          <h4>Contáctanos</h4>
+        </div>
+        <div class="contact">
+          <p>Calle primaveras, no. 570. Colonia Villa Nueva</p>
+          <p>Unidad Miraflores, CDMX.</p>
+          <p>(+52) 55-18-38-98</p>
+          <p>mayko.akio@gmail.com</p>
+        </div>
+        <div class="social">
+          <a href="https://www.instagram.com/mayko.mky/">
+            <img src="assets/img/home/instragram.png" alt="" />
+          </a>
+          <a href="https://www.instagram.com/mayko.mky/">
+            <img src="assets/img/home/facebook.png" alt="" />
+          </a>
+          <a href="https://www.instagram.com/mayko.mky/">
+            <img src="assets/img/home/youtube.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          ©
+          <span> Mayko </span> | Pamela Briseño
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

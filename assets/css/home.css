@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abel", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+body {
+  background-color: var(--Blanco);
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Gris: #454a45;
+  --Negro: #252725;
+  --Amarillo: #ffc000;
+  --Blanco: #ffffff;
+}
+
+.brand h1 {
+  color: var(--Blanco);
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li a {
+  color: var(--Blanco);
+  font-size: 0.9rem;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.logo h2 {
+  font-size: 2.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.description h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: left;
+  color: var(--Amarillo);
+}
+
+.description h3 span p {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: left;
+  color: var(--Gris);
+}
+
+.description p {
+  font-weight: 100;
+  font-size: 0.9rem;
+  text-align: justify;
+  color: var(--Negro);
+}
+.description-in h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: left;
+  color: var(--Amarillo);
+}
+
+.description-in p {
+  font-weight: 100;
+  font-size: 0.9rem;
+  text-align: justify;
+  color: var(--Negro);
+}
+
+.bye p {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--Negro);
+}
+
+.banner {
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--Gris);
+}
+
+.contact {
+  font-weight: 100;
+  font-size: 0.7rem;
+  text-align: left;
+  color: var(--Negro);
+}
+
+.copyright p {
+  text-align: center;
+  font-weight: 100;
+  font-size: 0.6rem;
+  color: var(--Negro);
+}
+
+/* ===========================
+        Layout
+============================== */
+
+#audio-tag {
+  position: absolute;
+  z-index: 100;
+  top: 2rem;
+  left: 1rem;
+  opacity: 0.1;
+}
+#audio-tag:hover {
+  opacity: 0.4;
+}
+
+#audio-tag:focus {
+  outline: none;
+  border: none;
+}
+
+nav {
+  background-color: var(--Gris);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.brand {
+  position: absolute;
+  left: 0.5em;
+}
+
+.menu ul {
+  display: flex;
+  margin-right: 0.5em;
+}
+
+.menu ul li {
+  margin-left: 1em;
+}
+
+.menu ul li:nth-child(3) {
+  position: relative;
+}
+
+.logo {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.logo h2 {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.about {
+  width: 95%;
+  margin: 1em auto;
+}
+
+.description {
+  margin: 2.5em auto;
+}
+
+.description h3 {
+  margin: 0.8em auto;
+}
+
+.works {
+  background-color: var(--Gris);
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 95%;
+  margin: 0.5em auto;
+  border-radius: 16px;
+}
+
+.works-img {
+  margin: 0.5em 0.3em;
+  width: 50%;
+  border-radius: 16px;
+  position: relative;
+}
+
+.works-img .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  transition: 0.5s;
+  border-radius: inherit;
+}
+
+.works-img img {
+  border-radius: inherit;
+}
+
+.more {
+  width: 95%;
+  margin: 0.5em auto;
+}
+
+.description-in {
+  margin: 1.5em auto;
+}
+
+.slider {
+  width: 90%;
+  margin: 0.5em auto;
+}
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0 auto;
+  animation: 18s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+.bye {
+  margin: 1em auto;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner {
+  margin: 0.8em auto;
+}
+
+.contact {
+  margin: 0.5em auto;
+}
+
+.social {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+.social a {
+  width: 25%;
+}
+.social a img {
+  width: 100%;
+}
+
+.copyright p span {
+  color: var(--Negro);
+  font-weight: 900;
+}
+
+.goto-about {
+  width: 80%;
+  margin: 0.5em auto;
+  display: block;
+  font-size: 1.7rem;
+  background-color: none;
+  border: 2px solid var(--Amarillo);
+  border-radius: 10px;
+}
+
+.goto-about a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  background-color: var(--Blanco);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: inherit;
+}
+
+/* ===========================
+        Decorations
+============================== */
+
+.menu ul li a:hover {
+  color: var(--Amarillo);
+}
+
+.works-img:hover .hover {
+  transform: scale(0);
+}
+
+.goto-about a:hover,
+.goto-about a:focus,
+.goto-about:hover {
+  background-color: var(--Negro);
+  color: var(--Amarillo);
+  outline: none;
+  border: 2px solid var(--Blanco);
+}
+
+/* ===========================
+        Dropdown
+============================== */
+.dropdown {
+  position: relative;
+  width: 100px;
+}
+
+.dropdown span {
+  color: var(--Blanco);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dropdown-content {
+  display: none;
+  width: 100%;
+  padding: 0.1em 0.3em;
+  top: 1rem;
+  position: absolute;
+  background-color: var(--Gris);
+  font-size: 1.5rem;
+}
+
+.dropdown-content .dropdown-item {
+  font-size: 0.7rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 200;
+}
+
+.dropdown:hover span {
+  color: var(--Amarillo);
+  cursor: pointer;
+}
+
+@media (min-width: 650px) {
+  nav {
+    height: 2rem;
+  }
+
+  .brand h1 {
+    font-size: 2rem;
+  }
+
+  .menu ul li a {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 80%;
+    height: 100vh;
+    margin: 4em auto;
+  }
+
+  .logo img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo h2 {
+    font-size: 3rem;
+  }
+
+  .about {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .description {
+    width: 50%;
+    margin: 1em;
+  }
+  .description h3 {
+    margin: 0 auto;
+    font-size: 5rem;
+  }
+
+  .description h4 {
+    font-family: "AvantGarde Bk BT", "Franklin Gothic Medium", "Arial Narrow",
+      Arial, sans-serif;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: var(--Negro);
+  }
+
+  .description p {
+    text-align: justify;
+    font-size: 0.9rem;
+    margin-right: 2em;
+    display: block;
+  }
+
+  .works {
+    height: 90%;
+    align-self: flex-end;
+    margin-left: 5em;
+  }
+
+  .works-img {
+    margin: 1em 0.8em;
+    width: 50%;
+    position: relative;
+  }
+
+  .container-more {
+    width: 100%;
+    margin: 3em 0.5em;
+    padding-left: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container-more > * {
+    order: 0;
+    margin: 1em auto;
+  }
+
+  .more {
+    width: 60%;
+    order: 2;
+    margin: 0.5em auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: right;
+    overflow: hidden;
+  }
+
+  .description-in {
+    width: 80%;
+    justify-items: flex-end;
+  }
+
+  .description-in h3 {
+    text-align: right;
+    font-size: 5rem;
+  }
+
+  .description-in p {
+    text-align: justify;
+    font-size: 0.9rem;
+    display: block;
+  }
+
+  .slider {
+    order: 1;
+    width: 50%;
+    align-self: flex-start;
+    margin-top: 3em;
+    padding-right: 3em;
+  }
+
+  #slider {
+    overflow: hidden;
+    margin: 0.5em auto;
+  }
+
+  #slider figure {
+    position: relative;
+    width: 500%;
+    margin-left: 0.5em;
+    animation: 18s slider infinite;
+  }
+
+  #slider figure img {
+    width: 20%;
+    float: left;
+  }
+
+  .bye {
+    margin: 0.1em auto;
+  }
+
+  .bye p {
+    font-size: 1.2em;
+  }
+
+  .banner h4 {
+    font-size: 1.2rem;
+  }
+
+  .contact p {
+    font-size: 1rem;
+  }
+
+  .social {
+    flex-direction: row;
+  }
+
+  .social a img {
+    width: 65%;
+  }
+
+  .copyright p {
+    font-size: 0.8rem;
+  }
+
+  .rectangle {
+    margin: 5em 0 1em 0;
+  }
+
+  .goto-about {
+    margin-top: 1.5em;
+  }
+
+  .goto-about a {
+    font-size: 1.5rem;
+  }
+
+  .dropdown {
+    position: relative;
+    width: 100px;
+  }
+
+  .dropdown span {
+    color: var(--Blanco);
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .dropdown-content {
+    display: none;
+    width: 100%;
+    padding: 0.1em 0.3em;
+    top: 2rem;
+    position: absolute;
+    background-color: var(--Gris);
+    font-size: 1.5rem;
+  }
+
+  .dropdown-content .dropdown-item {
+    font-size: 1rem;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 200;
+  }
+
+  .dropdown:hover span {
+    color: var(--Amarillo);
+    cursor: pointer;
+  }
+
+  #audio-tag {
+    top: 3rem;
+  }
+}
